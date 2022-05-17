@@ -1,5 +1,5 @@
 
-## INPUT
+## Inputs
 
 Arrows: Move left or right
 Space : Jump
