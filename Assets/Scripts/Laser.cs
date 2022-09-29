@@ -12,6 +12,13 @@ public class Laser : MonoBehaviour
 
     public bool m_camera_shake;
 
+    private int m_layerMask;
+
+    private void Awake()
+    {
+        
+    }
+
     public void NotShoot()
     {
         if (m_laser.enabled)
@@ -35,7 +42,7 @@ public class Laser : MonoBehaviour
         m_laser.SetPosition(0, transform.position);
 
         //  Shoot where it's looking
-        if (Physics.Raycast(transform.position, dir, out RaycastHit hit, max_reach))
+        if (Physics.Raycast(transform.position, dir, out RaycastHit hit, max_reach,))
         {
             m_laser.SetPosition(1, hit.point);
 
